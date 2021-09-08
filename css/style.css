@@ -1,0 +1,126 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+}
+body {
+  line-height: 1.5;
+}
+.wrapper {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+img {
+  width: 100%;
+  display: block;
+}
+.billede {
+  overflow: hidden;
+}
+.fremvisning {
+  display: flex;
+  width: 100%;
+  transition: all 0.5s ease;
+}
+.fremvisning img {
+  min-width: 100%;
+}
+.billede-valgt {
+  display: flex;
+}
+.billede-antal {
+  margin: 0.3rem;
+}
+.billede-antal:nth-child(1),
+.billede-antal:nth-child(2),
+.billede-antal:nth-child(3) {
+  margin-right: 0;
+}
+.billede-antal:hover {
+  opacity: 0.8;
+}
+.produkt {
+  padding: 2rem 1rem;
+}
+.produkt-titel {
+  font-size: 3rem;
+  text-transform: capitalize;
+  font-weight: 700;
+  position: relative;
+  color: #12263a;
+  margin: 1rem 0;
+}
+
+.produkt-pris {
+  margin: 1rem 0;
+  font-size: 1rem;
+  font-weight: 700;
+}
+.produkt-pris span {
+  font-weight: 400;
+}
+
+.pris span {
+  color: #419DEF;
+}
+.produkt-beskrivelse h2 {
+  text-transform: capitalize;
+  color: #12263a;
+  padding-bottom: 0.5rem;
+}
+.produkt-beskrivelse p {
+  font-size: 1rem;
+  padding: 0.3rem;
+  opacity: 1;
+}
+.produkt-beskrivelse ul {
+  margin: 1rem 0;
+  font-size: 1rem;
+}
+.produkt-beskrivelse ul li {
+  margin: 0;
+  list-style: circle;
+  padding-left: 0.8rem;
+  margin: 0.4rem 0;
+  font-weight: 600;
+}
+.produkt-beskrivelse ul li span {
+  font-weight: 400;
+}
+.køb-information {
+  margin: 1.5rem 0;
+}
+.køb-information .btn {
+  border: 1.5px solid #ddd;
+  border-radius: 25px;
+  text-align: center;
+  padding: 0.45rem 0.8rem;
+  outline: 0;
+  margin-right: 0.2rem;
+  margin-bottom: 1rem;
+}
+
+.kort {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 1.5rem;
+}
+.wrapper {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.produkt-billeder {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.produkt {
+  padding-top: 0;
+}
+
+#blå {
+  color: #419DEF;
+}
